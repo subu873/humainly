@@ -1,0 +1,705 @@
+[
+  {
+    "match": [
+      "top deals",
+      "deals"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Here are your **top open deals** this quarter, sorted by value."
+      },
+      {
+        "type": "stat",
+        "label": "Open pipeline",
+        "value": "$4.21M",
+        "delta": "+12% QoQ"
+      },
+      {
+        "type": "table",
+        "title": "Top Deals",
+        "columns": [
+          {
+            "key": "account",
+            "label": "Account"
+          },
+          {
+            "key": "owner",
+            "label": "Owner"
+          },
+          {
+            "key": "stage",
+            "label": "Stage",
+            "type": "badge"
+          },
+          {
+            "key": "value",
+            "label": "Value",
+            "type": "currency"
+          },
+          {
+            "key": "closeDate",
+            "label": "Close Date",
+            "type": "date"
+          },
+          {
+            "key": "probability",
+            "label": "Win %",
+            "type": "percent"
+          }
+        ],
+        "rows": [
+          {
+            "account": "Northwind Traders",
+            "owner": "Asha Nair",
+            "stage": "Negotiation",
+            "value": 480000,
+            "closeDate": "2026-06-18",
+            "probability": 75
+          },
+          {
+            "account": "Globex Corp",
+            "owner": "Ravi Menon",
+            "stage": "Proposal",
+            "value": 365000,
+            "closeDate": "2026-06-30",
+            "probability": 60
+          },
+          {
+            "account": "Stark Retail",
+            "owner": "Meera Iyer",
+            "stage": "Negotiation",
+            "value": 342000,
+            "closeDate": "2026-06-12",
+            "probability": 80
+          },
+          {
+            "account": "Umbrella Foods",
+            "owner": "Sam Pinto",
+            "stage": "Qualified",
+            "value": 298000,
+            "closeDate": "2026-07-09",
+            "probability": 45
+          },
+          {
+            "account": "Initech",
+            "owner": "Asha Nair",
+            "stage": "Proposal",
+            "value": 275000,
+            "closeDate": "2026-06-22",
+            "probability": 55
+          },
+          {
+            "account": "Wayne Health",
+            "owner": "Vikram Rao",
+            "stage": "Negotiation",
+            "value": 261000,
+            "closeDate": "2026-06-15",
+            "probability": 70
+          },
+          {
+            "account": "Acme Logistics",
+            "owner": "Ravi Menon",
+            "stage": "Qualified",
+            "value": 240000,
+            "closeDate": "2026-07-20",
+            "probability": 40
+          },
+          {
+            "account": "Soylent Industries",
+            "owner": "Meera Iyer",
+            "stage": "Proposal",
+            "value": 228000,
+            "closeDate": "2026-06-28",
+            "probability": 50
+          },
+          {
+            "account": "Hooli",
+            "owner": "Sam Pinto",
+            "stage": "Lead",
+            "value": 195000,
+            "closeDate": "2026-08-04",
+            "probability": 20
+          },
+          {
+            "account": "Vandelay Imports",
+            "owner": "Vikram Rao",
+            "stage": "Qualified",
+            "value": 182000,
+            "closeDate": "2026-07-14",
+            "probability": 45
+          },
+          {
+            "account": "Cyberdyne Systems",
+            "owner": "Asha Nair",
+            "stage": "Proposal",
+            "value": 174000,
+            "closeDate": "2026-07-02",
+            "probability": 55
+          },
+          {
+            "account": "Pied Piper",
+            "owner": "Ravi Menon",
+            "stage": "Lead",
+            "value": 150000,
+            "closeDate": "2026-08-19",
+            "probability": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "by stage",
+      "pipeline"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Your pipeline broken down **by stage**."
+      },
+      {
+        "type": "chart",
+        "chart": "bar",
+        "labels": [
+          "Lead",
+          "Qualified",
+          "Proposal",
+          "Negotiation",
+          "Won",
+          "Lost"
+        ],
+        "values": [
+          345000,
+          720000,
+          1042000,
+          1083000,
+          1560000,
+          410000
+        ]
+      },
+      {
+        "type": "table",
+        "title": "Stage Summary",
+        "columns": [
+          {
+            "key": "stage",
+            "label": "Stage",
+            "type": "badge"
+          },
+          {
+            "key": "deals",
+            "label": "# Deals",
+            "type": "number"
+          },
+          {
+            "key": "totalValue",
+            "label": "Total Value",
+            "type": "currency"
+          },
+          {
+            "key": "avgDaysOpen",
+            "label": "Avg Days Open",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "stage": "Lead",
+            "deals": 9,
+            "totalValue": 345000,
+            "avgDaysOpen": 12
+          },
+          {
+            "stage": "Qualified",
+            "deals": 7,
+            "totalValue": 720000,
+            "avgDaysOpen": 21
+          },
+          {
+            "stage": "Proposal",
+            "deals": 6,
+            "totalValue": 1042000,
+            "avgDaysOpen": 34
+          },
+          {
+            "stage": "Negotiation",
+            "deals": 4,
+            "totalValue": 1083000,
+            "avgDaysOpen": 41
+          },
+          {
+            "stage": "Won",
+            "deals": 11,
+            "totalValue": 1560000,
+            "avgDaysOpen": 0
+          },
+          {
+            "stage": "Lost",
+            "deals": 5,
+            "totalValue": 410000,
+            "avgDaysOpen": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "contacts",
+      "people"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Contacts you've engaged in the last 90 days."
+      },
+      {
+        "type": "table",
+        "title": "Engaged Contacts",
+        "columns": [
+          {
+            "key": "name",
+            "label": "Name"
+          },
+          {
+            "key": "company",
+            "label": "Company"
+          },
+          {
+            "key": "title",
+            "label": "Title"
+          },
+          {
+            "key": "email",
+            "label": "Email"
+          },
+          {
+            "key": "lastContacted",
+            "label": "Last Contacted",
+            "type": "date"
+          },
+          {
+            "key": "engagement",
+            "label": "Engagement",
+            "type": "number"
+          }
+        ],
+        "rows": [
+          {
+            "name": "Priya Sharma",
+            "company": "Northwind Traders",
+            "title": "VP Operations",
+            "email": "priya.sharma@northwind.com",
+            "lastContacted": "2026-05-26",
+            "engagement": 87
+          },
+          {
+            "name": "Daniel Cole",
+            "company": "Globex Corp",
+            "title": "Director of IT",
+            "email": "dcole@globex.com",
+            "lastContacted": "2026-05-21",
+            "engagement": 64
+          },
+          {
+            "name": "Aisha Khan",
+            "company": "Stark Retail",
+            "title": "Head of Procurement",
+            "email": "aisha.khan@starkretail.com",
+            "lastContacted": "2026-05-28",
+            "engagement": 92
+          },
+          {
+            "name": "Marco Ferreira",
+            "company": "Umbrella Foods",
+            "title": "COO",
+            "email": "marco.f@umbrellafoods.com",
+            "lastContacted": "2026-05-19",
+            "engagement": 55
+          },
+          {
+            "name": "Lena Wu",
+            "company": "Initech",
+            "title": "CTO",
+            "email": "lena.wu@initech.io",
+            "lastContacted": "2026-05-24",
+            "engagement": 71
+          },
+          {
+            "name": "Tomás Rivera",
+            "company": "Wayne Health",
+            "title": "VP Clinical Ops",
+            "email": "trivera@waynehealth.org",
+            "lastContacted": "2026-05-27",
+            "engagement": 78
+          },
+          {
+            "name": "Grace Mbatha",
+            "company": "Acme Logistics",
+            "title": "Procurement Lead",
+            "email": "grace.m@acmelogistics.com",
+            "lastContacted": "2026-05-15",
+            "engagement": 49
+          },
+          {
+            "name": "Henrik Olsen",
+            "company": "Soylent Industries",
+            "title": "Plant Director",
+            "email": "h.olsen@soylent.co",
+            "lastContacted": "2026-05-22",
+            "engagement": 60
+          },
+          {
+            "name": "Fatima Noor",
+            "company": "Hooli",
+            "title": "Product Lead",
+            "email": "fnoor@hooli.com",
+            "lastContacted": "2026-05-12",
+            "engagement": 38
+          },
+          {
+            "name": "Carlos Mendez",
+            "company": "Vandelay Imports",
+            "title": "Head of Sales",
+            "email": "carlos@vandelay.com",
+            "lastContacted": "2026-05-25",
+            "engagement": 69
+          },
+          {
+            "name": "Sophie Laurent",
+            "company": "Cyberdyne Systems",
+            "title": "VP Engineering",
+            "email": "s.laurent@cyberdyne.com",
+            "lastContacted": "2026-05-20",
+            "engagement": 74
+          },
+          {
+            "name": "Arjun Reddy",
+            "company": "Pied Piper",
+            "title": "Founder",
+            "email": "arjun@piedpiper.com",
+            "lastContacted": "2026-05-08",
+            "engagement": 31
+          },
+          {
+            "name": "Nina Castellano",
+            "company": "Northwind Traders",
+            "title": "Finance Director",
+            "email": "nina.c@northwind.com",
+            "lastContacted": "2026-05-29",
+            "engagement": 83
+          },
+          {
+            "name": "Wei Zhang",
+            "company": "Globex Corp",
+            "title": "VP Supply Chain",
+            "email": "wei.zhang@globex.com",
+            "lastContacted": "2026-05-18",
+            "engagement": 57
+          },
+          {
+            "name": "Omar Haddad",
+            "company": "Stark Retail",
+            "title": "Regional Manager",
+            "email": "omar.h@starkretail.com",
+            "lastContacted": "2026-05-23",
+            "engagement": 66
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "who owns",
+      "leaderboard",
+      "reps"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Rep leaderboard for the quarter, ranked by deals won."
+      },
+      {
+        "type": "table",
+        "title": "Rep Leaderboard",
+        "columns": [
+          {
+            "key": "rank",
+            "label": "#",
+            "type": "number"
+          },
+          {
+            "key": "owner",
+            "label": "Rep"
+          },
+          {
+            "key": "dealsWon",
+            "label": "Won",
+            "type": "number"
+          },
+          {
+            "key": "pipeline",
+            "label": "Open Pipeline",
+            "type": "currency"
+          },
+          {
+            "key": "winRate",
+            "label": "Win Rate",
+            "type": "percent"
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "owner": "Asha Nair",
+            "dealsWon": 7,
+            "pipeline": 929000,
+            "winRate": 58
+          },
+          {
+            "rank": 2,
+            "owner": "Meera Iyer",
+            "dealsWon": 6,
+            "pipeline": 798000,
+            "winRate": 52
+          },
+          {
+            "rank": 3,
+            "owner": "Vikram Rao",
+            "dealsWon": 5,
+            "pipeline": 705000,
+            "winRate": 49
+          },
+          {
+            "rank": 4,
+            "owner": "Ravi Menon",
+            "dealsWon": 5,
+            "pipeline": 655000,
+            "winRate": 44
+          },
+          {
+            "rank": 5,
+            "owner": "Sam Pinto",
+            "dealsWon": 3,
+            "pipeline": 493000,
+            "winRate": 37
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "recent activity",
+      "activity"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Your **recent activity** across accounts."
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "title": "Call with Aisha Khan",
+            "subtitle": "Stark Retail · 28 May",
+            "fields": {
+              "Type": "Call",
+              "Duration": "32 min",
+              "Outcome": "Demo booked"
+            }
+          },
+          {
+            "title": "Email thread: pricing",
+            "subtitle": "Northwind Traders · 26 May",
+            "fields": {
+              "Type": "Email",
+              "Messages": "5",
+              "Status": "Awaiting reply"
+            }
+          },
+          {
+            "title": "Proposal sent",
+            "subtitle": "Globex Corp · 24 May",
+            "fields": {
+              "Type": "Document",
+              "Value": "$365K",
+              "Status": "Viewed"
+            }
+          },
+          {
+            "title": "Discovery meeting",
+            "subtitle": "Wayne Health · 27 May",
+            "fields": {
+              "Type": "Meeting",
+              "Attendees": "4",
+              "Next step": "Security review"
+            }
+          },
+          {
+            "title": "Call with Lena Wu",
+            "subtitle": "Initech · 24 May",
+            "fields": {
+              "Type": "Call",
+              "Duration": "18 min",
+              "Outcome": "Technical Q&A"
+            }
+          },
+          {
+            "title": "Contract redlines",
+            "subtitle": "Umbrella Foods · 19 May",
+            "fields": {
+              "Type": "Document",
+              "Value": "$298K",
+              "Status": "In legal"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "account",
+      "northwind"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "**Northwind Traders** — account overview."
+      },
+      {
+        "type": "stat",
+        "label": "Open deals",
+        "value": "3",
+        "delta": "$662K total"
+      },
+      {
+        "type": "stat",
+        "label": "Last touch",
+        "value": "1 day ago",
+        "delta": "Email · Nina Castellano"
+      },
+      {
+        "type": "stat",
+        "label": "Health",
+        "value": "Healthy",
+        "delta": "+8 vs last month"
+      },
+      {
+        "type": "table",
+        "title": "Recent Interactions",
+        "columns": [
+          {
+            "key": "date",
+            "label": "Date",
+            "type": "date"
+          },
+          {
+            "key": "channel",
+            "label": "Channel",
+            "type": "badge"
+          },
+          {
+            "key": "subject",
+            "label": "Subject"
+          },
+          {
+            "key": "direction",
+            "label": "Direction",
+            "type": "badge"
+          }
+        ],
+        "rows": [
+          {
+            "date": "2026-05-29",
+            "channel": "Email",
+            "subject": "Re: revised pricing for Q3",
+            "direction": "Inbound"
+          },
+          {
+            "date": "2026-05-26",
+            "channel": "Email",
+            "subject": "Revised pricing for Q3",
+            "direction": "Outbound"
+          },
+          {
+            "date": "2026-05-22",
+            "channel": "Call",
+            "subject": "Negotiation sync with Priya",
+            "direction": "Outbound"
+          },
+          {
+            "date": "2026-05-18",
+            "channel": "Meeting",
+            "subject": "Quarterly business review",
+            "direction": "Outbound"
+          },
+          {
+            "date": "2026-05-14",
+            "channel": "Email",
+            "subject": "Contract questions",
+            "direction": "Inbound"
+          },
+          {
+            "date": "2026-05-09",
+            "channel": "Call",
+            "subject": "Intro to finance team",
+            "direction": "Outbound"
+          },
+          {
+            "date": "2026-05-03",
+            "channel": "Email",
+            "subject": "Proposal v1",
+            "direction": "Outbound"
+          },
+          {
+            "date": "2026-04-28",
+            "channel": "Meeting",
+            "subject": "Discovery call",
+            "direction": "Outbound"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "deal timeline",
+      "timeline"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Here's the recent timeline for the Northwind Traders deal."
+      },
+      {
+        "type": "timeline",
+        "events": [
+          {
+            "when": "Mon",
+            "what": "Discovery call"
+          },
+          {
+            "when": "Wed",
+            "what": "Demo"
+          },
+          {
+            "when": "Fri",
+            "what": "Proposal sent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "match": [
+      "forecast"
+    ],
+    "blocks": "__MALFORMED__"
+  }
+]

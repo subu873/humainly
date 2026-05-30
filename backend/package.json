@@ -1,0 +1,14 @@
+{
+  "name": "insights-assistant-mock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mock backend for the Humainly frontend take-home (Insights Assistant)",
+  "main": "mock-server.cjs",
+  "scripts": {
+    "start": "node mock-server.cjs"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
